@@ -1,0 +1,25 @@
+<div class="formRegis">
+    <h2>Register</h2>
+    <form method="post" action="/create">
+        <div class="form-group">
+            <label for="exampleInputEmail1"><i class="ti-user"></i> User Name</label>
+            <input type="text" class="form-control" name="user" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <span>{{errUser}}</span>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1"><i class="ti-lock"></i> Password</label>
+            <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+            <span>{{errPassword}}</span>
+
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1"><i class="ti-email"></i> Email</label>
+            <input type="text" class="form-control" name="email" placeholder="Email">
+            <span>{{errEmail}}</span>
+        </div>
+        <span class="errCreate">{{errCreate}}</span>
+        <button type="submit" class="btn btn-primary">Create</button>
+        <div class="btnRegis"><a href="/">Đăng nhập</a></div>
+        
+    </form>
+</div>

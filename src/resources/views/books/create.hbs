@@ -1,0 +1,31 @@
+{{> navAdmin}}
+<div class="create-book mt-4">
+    <h3>Thêm sách</h3>
+    <form method="post" action="/books/store" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">Tên sách:</label> 
+            <input type="text" class="form-control" placeholder="Nhập tên sách..." name="name"> 
+            <span>{{errName}}</span>
+        </div>
+        <div class="form-group">
+            <label for="author">Tác giả:</label> 
+            <input type="text" class="form-control" placeholder="Nhập tên tác giả..." name="author">
+            <span>{{errAuthor}}</span>
+        </div>
+        <div class="form-group">
+            <label for="company">Nhà xuất bản:</label>  <br>
+            <input type="text" class="form-control" placeholder="Nhập nhà xuất bản..." name="company"> 
+            <span>{{errCompany}}</span>
+        </div>
+        <div class="form-group">
+            <label for="description">Mô tả:</label>  <br>
+            <input type="text" class="form-control" placeholder="Nhập mô tả..." name="description"> 
+            <span>{{errDescription}}</span>
+        </div>
+        <div class="form-group">
+            <label for="">Chọn ảnh:</label> <br>
+            <input type="file" placeholder="" name="image">
+        </div>
+        <button type="submit" class="btnCreate btn btn-primary">Thêm</button>
+    </form>
+</div>

@@ -1,0 +1,19 @@
+{{> navAdmin}}
+<div class="edit mt-4">
+    <h3 class="mt40">Cập nhật user</h3>
+    <form method="post" action="/users/{{user._id}}?_method=PUT">
+        <div class="form-group">
+            <label for="">Tên người dùng</label> <br>
+            <input type="text" class="form-control" value="{{user.user}}" placeholder="" name="user">
+        </div>
+        <div class="form-group">
+            <label for="">Mật khẩu</label> <br>
+            <input type="text" class="form-control" value="{{user.password}}" placeholder="" name="password">
+        </div>
+        <div class="form-group">
+            <label for="">Email</label> <br> 
+            <input type="text" class="form-control" value="{{user.email}}" placeholder="" name="email">
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu lại</button>
+    </form>
+</div>

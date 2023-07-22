@@ -1,0 +1,57 @@
+{{!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/home">Bookshop FPL</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Hello: 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/logout" onclick="logout()">Dang xuat</a>
+        </div>
+        
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav> --}}
+<div class="main-detail">
+    <div class="row">
+        <div class="col-lg-9">
+            <img class="card-img-top" src="/img/{{book.book.image}}" alt="loading">
+              <div class="authorDettail">
+                <h2>{{book.book.name}}</h2>
+                <h5>Tác giả: Nguyễn Thanh Vân</h5>
+                <h5>Nhà xuất bản: NXB Lao Động</h5>
+                <h5>Đánh giá: * * * * * (2 đánh giá)</h5>
+              </div>
+            <p>{{book.book.description}}</p>
+        </div>
+    </div>
+
+    {{#each comments}}
+        <h4>{{this.userComment}}</h4>
+        <p>{{this.content}}</p>
+    {{/each}}
+
+     {{#if userSession}}
+        <form action="/books/{{book.book.slug}}" method="post" class="form-cmt">
+          <div class="form-group form-control-cmt">
+            <label for="">Bình luận về sách này:</label> <br>
+            <input name="content" type="text" placeholder="Enter comment">
+            <small class="form-text text-muted">Hãy là người bình luận văn minh</small>
+          </div> 
+          <button type="submit" class="btn-cmt">Bình luận</button>
+        </form> 
+      {{else}}
+        <p>Bạn phải <a href="/">đăng nhập</a> để bình luận sản phẩm này!</p>
+      {{/if}}
+</div>

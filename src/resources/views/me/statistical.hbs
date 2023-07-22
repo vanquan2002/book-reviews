@@ -1,0 +1,29 @@
+{{> navAdmin}}
+<div class="title-chart">
+  <h3>Biểu đồ thống kê Bookshop FPL</h3>
+</div>
+<div class="chart">
+  <canvas id="myChart"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('myChart');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Tổng số sách:', 'Tổng số user:', 'Tổng số comment:'],
+      datasets: [{
+        label: 'Số liệu thống kê',
+        data: [{{countBooks}}, {{countUsers}}, {{countComments}}],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>

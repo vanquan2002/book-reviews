@@ -1,0 +1,38 @@
+<div class="main-detail">
+    <div class="contentShow row">
+        <div class="col-lg-9">
+            <img class="card-img-top" src="/img/{{book.book.image}}" alt="loading">
+              <div class="authorDettail">
+                <h2>{{book.book.name}}</h2>
+                <h6>Tác giả: {{book.book.author}}</h6>
+                <h6>Nhà xuất bản: {{book.book.company}}</h6>
+              </div>
+            <p>{{book.book.description}}</p>
+        </div>
+    </div>
+    
+    <dir class="boxCmt">
+      {{#each comments}}
+        <div class="mainCmt">
+          <ul>
+            <li>
+              <p class="userCmt"><i class="ti-comment"> </i> {{this.userComment}}:</p> <p>{{this.content}}</p>
+            </li>
+        </ul>
+        </div>
+    {{/each}}
+    </dir>
+  
+    {{#if userSession}}
+        <form action="/books/{{book.book.slug}}" method="post" class="form-cmt">
+          <div class="form-group form-control-cmt">
+            <label for="">Bình luận về sách này:</label> <br>
+            <input name="content" type="text" placeholder="Enter comment">
+            <small class="form-text text-muted">Hãy là người bình luận văn minh</small>
+          </div> 
+          <button type="submit" class="btn-cmt">Bình luận</button>
+        </form> 
+      {{else}}
+        <p>Bạn phải <a href="/">đăng nhập</a> để bình luận sản phẩm này!</p>
+      {{/if}}
+</div>

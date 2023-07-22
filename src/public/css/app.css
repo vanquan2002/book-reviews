@@ -1,0 +1,395 @@
+
+/* ADMIN */
+h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.btnLogin{
+  padding-left: 80px;
+  margin-top: -30px;
+}
+.btnLogin a{
+  color: rgb(233, 133, 61);
+}
+.btnRegis{
+  margin-left: 93px;
+  margin-top: -30px;
+}
+.btnRegis a{
+  color: rgb(233, 133, 61);
+}
+.titleAdmin{
+  padding: 25px 0px;
+  margin-top: 60px;
+}
+.titleAdmin a{
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(233, 133, 61);
+  padding: 10px;
+  margin: 3px
+}
+.titleAdmin a:hover{
+  transition: 0.3s;
+  color: #fff;
+  background-color: rgba(218, 139, 83, 0.704);
+
+}
+.btnAction{
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 5px 8px;
+  background-color: rgb(233, 133, 61);
+  color: #fff;
+}
+.btnAction:hover{
+  transition: 0.3s;
+  text-decoration: none;
+  background-color: rgba(218, 139, 83, 0.704);
+  color: #fff;
+}
+.mt40{
+  margin: 30px 0;
+}
+.btn-primary{
+  margin-top: 10px;
+  background-color: #ccc;
+  border: none;
+  background-color: rgb(233, 133, 61);
+}
+.btn-primary:hover{
+  background-color: rgba(218, 139, 83, 0.704);
+}
+.welcome{
+  margin-top: 150px;
+  margin-bottom: 237px;
+  padding: 30px 0;
+  width: 100%;
+  text-align: center;
+}
+.create-book{
+  margin-bottom: 21px;
+}
+.create-book h3{
+  text-align: center;
+}
+.admin-user h3{
+  text-align: center;
+}
+.admin-cmt h3{
+  text-align: center;
+}
+.create-book h3{
+  text-align: center;
+}
+.admin-book h3{
+  text-align: center;
+}
+.create-book input{
+  font-style: italic;
+}
+.btnCreate{
+  /* margin-left: 1045px; */
+  padding: 8px 534px;
+}
+.admin-book{
+  min-height: 495px;
+}
+.admin-user{
+  min-height: 495px;
+}
+.admin-cmt{
+  min-height: 495px;
+}
+.chart{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.title-chart h3{
+  text-align: center;
+  padding: 20px 0px;
+}
+.edit h3{
+  text-align: center;
+}
+.btnDele{
+  position: relative;
+  top: 7px;
+  left: 10px;
+}
+.iconAdmin i{
+  color: #fff;
+}
+
+/* USER */
+.main-detail{
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  margin: 0 auto;
+  margin-left: 140px;
+  margin-top: 50px;
+}
+.main-detail img{
+  width: 50%;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.authorDettail{
+  width: 48%;
+  position: absolute;
+  top: 0px;
+  left: 45%;
+}
+.card{
+  background-color:rgb(246, 246, 246);
+}
+.mainShow{
+  padding: -5px;
+  padding-top: 2px;
+  padding-bottom: 20px;
+}
+.mainShow img{
+  transition: 0.5s;
+}
+.mainShow img:hover{
+  transform: scale(1.1);
+}
+.form-cmt{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form-cmt small{
+  margin-left: 55.8%;
+
+}
+.form-control-cmt input{
+  width: 72%;
+  padding: 5px 8px;
+  margin-left: 9px;
+  border-radius: 5px;
+  border: 5px solid #ccc;
+  font-style: italic;
+}
+.btn-cmt{
+  margin-left: 64.5%;
+  color: #fff;
+  padding: 6px 12px;
+  background-color: rgb(233, 133, 61);
+  border: none;
+  border-radius: 5px;
+}
+.btn-cmt:hover{
+  transition: 0.6s;
+  cursor: pointer;
+  background-color: rgba(218, 139, 83, 0.704);
+}
+.errBtn{
+  display: block;
+}
+span{
+  color: red;
+  font-style: italic;
+}
+.errCreate{
+  display: block;
+}
+.boxSearch{
+  padding: 78.5px 0px;
+  min-height: 630px;
+}
+.textSearch{
+  position: relative;
+  top: 200px;
+  left: 490px;
+  color: #666;
+}
+.mainCmt{
+  margin-left: -20px;
+}
+.mainCmt li {
+  list-style: none;
+}
+.mainCmt li p{
+  list-style: none;
+  display: inline;
+}
+.contentShow{
+  margin-bottom: 13px;
+}
+.userCmt{
+  font-weight: 600;
+}
+.boxCmt{
+  border: 5px solid #ccc;
+  width: 71.7%;
+  margin-left: 11.5px;
+  padding: 10px 0px 1px 0px;
+  border-radius: 5px;
+}
+.textHome{
+  color: red;
+}
+.detail{
+  font-style: italic;
+  color: #333;
+}
+.detail:hover{
+  text-decoration: none;
+  color: rgb(233, 133, 61);
+}
+.formLogin{
+  margin-top: 56px;
+  min-height: 597px;
+}
+.formLogin input{
+  font-style: italic;
+}
+.formRegis{
+  margin-top: 56px;
+  min-height: 597px;
+}
+.formRegis input{
+  font-style: italic;
+}
+i{
+  color: rgb(233, 133, 61);
+}
+.titleLogo{
+  color: rgb(233, 133, 61) !important; 
+  font-weight: 600;
+  padding-left: 30px;
+  font-style: italic;
+}
+
+/* SLIDES */
+.slides{
+  position: relative;
+  width: 97.3%;
+  min-height: 200px;
+  margin-bottom: 10px;
+  margin-top: 80px;
+  left: 2.8%;
+}
+.slides .thumb{
+  position: absolute;
+  top: 85%;
+  left: 28.6%;
+  text-align: center;
+  z-index: 5;
+}
+.thumb img{
+  width: 15%;
+  margin: 2px;
+  border: 1px #fff solid;
+  border-radius: 5px;
+}
+.btn-img{
+  position: relative;
+}
+.btn-img .prev-img{
+  position: absolute;
+  top: 50%;
+  left: 1%;
+}
+.btn-img .next-img{
+  position: absolute;
+  top: 50%;
+  right: 1%;
+}
+.btn-img button{
+  background-color:rgb(246, 246, 246);
+  width: 30px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+.btn-img button:hover{
+  cursor: pointer;
+  background-color:rgba(246, 246, 246, 0.461);
+  color: #fff;
+  
+}
+.btn-img img{
+  width: 100%;
+  border-radius: 5px;
+}
+body{
+  position: relative;
+}
+/* HEADER */
+.navbar2{
+  top: 0%;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+/* FOOTER */
+.footer{
+  position: relative;
+  width: 100%;
+  left: 1%;
+  background-color:rgba(246, 246, 246, 0.714);
+}
+.box-footer{
+  margin: 0 auto;
+  color: #333;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.contact{
+  position: absolute;
+  top: 22%;
+  left: 3%;
+}
+.contact h6{
+  color: rgb(233, 133, 61);
+}
+.contact a{
+  text-decoration: none;
+  text-align: center;
+  padding: 0 5px;
+  transition: 0.4s;
+}
+.contact a:hover{
+  cursor: pointer;
+  font-size: 24px;
+  
+}
+.boxEmail{
+  position: absolute;
+  top: 12%;
+  right: 8%;
+}
+.BtnBoxEmail{
+  position: absolute;
+  top: 32%;
+  left: 108%;
+}
+.regisEmail form{
+  color: rgb(233, 133, 61);
+}
+.regisEmail form input{
+  font-style: italic;
+}
+.erre404{
+  /* background-color: red; */
+  padding-top: 100px;
+}
+.erre404 h2{
+  text-align: center;
+  margin-top: 100px;
+  padding-top: 100px;
+  opacity: 0.5;
+}
+.erre404 h1{
+  text-align: center;
+  padding-bottom: 230px;
+  color: blue;
+  opacity: 0.6;
+  font-weight: 1000;
+}

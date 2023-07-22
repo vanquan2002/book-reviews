@@ -1,0 +1,72 @@
+{{> navAdmin}}
+<div class="admin-cmt mt-4">
+    <h3>Quản lý comment</h3>
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên người bình luận</th>
+                <th scope="col">Sách được bình luận</th>
+                <th scope="col">Nội dung bình luận</th>
+                <th scope="col">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each comments}}
+            <tr>
+                <th scope="row">{{sum @index 1}}</th>
+                <td>{{this.userComment}}</td>
+                <td>{{this.productComment}}</td>
+                <td><textarea class="form-control">{{this.content}}</textarea></td>
+                {{!-- <div class="form-group">
+                    <input type="text" class="form-control" value="{{book.name}}" placeholder="" name="name">
+                </div> --}}
+                <td> 
+                    <a class="btnDele btnAction" href="" data-id="{{this._id}}" data-toggle="modal" data-target="#delete-book-modal" >Xóa</a>
+                </td>
+            </tr>
+            {{/each}}
+
+        <div id="delete-book-modal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Xóa sách</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn có chắc chán muốn xóa sách này?</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="btn-delete-book" type="button" class="btn btn-danger">Xóa</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <form method="post" name="delete-book-form">
+        </form>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                var bookId;
+                var deleteForm = document.forms['delete-book-form'];
+                var btnDeleteBook = document.getElementById('btn-delete-book');
+
+                $('#delete-book-modal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) ;
+                bookId = button.data('id');
+                });
+
+                btnDeleteBook.onclick = function(){
+                    deleteForm.action = '/comments/' + bookId + '?_method=DELETE';
+                    deleteForm.submit();
+                }
+            });
+        </script>
+        </tbody>
+    </table>
+</div>
